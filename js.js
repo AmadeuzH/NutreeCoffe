@@ -6,7 +6,8 @@ let count = {
     kopitubruk : 0,
     mierebus : 0,
     miegoreng : 0,
-    telur : 0
+    telur : 0,
+    basotahu : 0
 
 };
 const prices = {
@@ -17,7 +18,9 @@ const prices = {
   kopitubruk: 8000,
   mierebus: 5000,
   miegoreng: 5000,
-  telur: 3000
+  telur: 3000,
+  basotahu : 10000
+    
 };
 window.onload = function () {
   for (let key in count) {
