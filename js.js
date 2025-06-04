@@ -64,6 +64,9 @@ let valuemierebus = document.getElementById('angkamierebus').value
 if (valuemierebus >= 1) {
   pilihmenu.classList.remove('d-none')
   pilihmenu.setAttribute("required","")
+} else{
+  pilihmenu.classList.toggle("d-none")
+  pilihmenu.removeAttribute("required", "")
 }
   updateTotal();
   }
