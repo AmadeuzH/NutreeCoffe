@@ -1,0 +1,472 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nutree Coffe</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+  </head>
+  <body style="background-color: rgb(0, 0, 0);">
+    
+      <nav class="navbar navbar-expand-lg " style="background-color: black;">
+        <div class="container" >
+          <a class="navbar-brand" style="color: aliceblue;text-shadow: 2px 2px 5px black, -1px -1px 0 rgba(255, 255, 255, 0.7); " href="">Nutree<span style="font-style: italic;color: burlywood;">Coffe</span> </a>
+          <button class="navbar-toggler bg-body" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" style="color: aliceblue;" aria-current="page" href="#Menu">Menu</a>
+              <a class="nav-link" style="color: aliceblue;" href="#aboutus">Tentang Kami</a>
+              <a class="nav-link" style="color: aliceblue;" href="#lokasi">Lokasi</a>
+              
+            </div>
+          </div>
+        </div>
+      </nav>
+    
+      <div class="jumbotron container-fluid ">
+        <div class="container">
+        <div data-aos="fade-up" data-aos-duration="1500" class="textjudul" style="width: 50%;" >
+          <h1  class="" style="font-size: clamp(2.5rem, 5vw, 5rem); color: rgb(255, 255, 255);text-shadow: 2px 2px 5px black, -1px -1px 0 rgba(255, 255, 255, 0.7); line-height: 1; padding-top: 30%;">Secangkir <span style="font-style: italic;color: burlywood ;">kopi</span>  Sejuta Inspirasi</h1>
+          <p style="color: rgba(246, 173, 47, 0.952); padding-left: 3px;opacity: 0.7; font-style: italic;line-height: 2;font-size: clamp(0.6rem, 1vw, 1rem);">NutreeCoffe - Lebih Dari Sekedar Kopi Biasa</p>
+         
+        </div>
+      </div>
+    </div>
+        
+        <div class="maskimage  " data-aos="zoom-in-up" data-aos-duration="1500">
+       
+        
+      </div>
+        
+
+     
+
+     
+ <div class="container">
+
+ 
+    <div class="Menu mt-3" id="Menu" >
+      <p style="color: aliceblue;text-align: center; font-size: 3rem; " class="garis-dengan-teks"><b>Menu</b></p>
+     <div class="row">
+      <div class="col-md-4 col-lg-3 mb-3" >
+        <div data-aos="fade-up" class="card cardcol" style=" background-color: rgb(24, 23, 23);">
+          <div class="img-menu" style="background-image: url('img/americano1.png');
+          background-size: cover;
+          background-position: center;">
+            
+          </div>
+          <div class="card-body" style="color: white;">
+            <h5 class="card-title underline-bold" id="menuamericano">Americano</h5>
+            <p class="card-text font-desk" > Espresso yang ditambahkan air, menghasilkan kopi hitam dengan rasa lebih ringan.</p>
+            <p class="card-text" style="text-align: center;"><small class="text-body-body" style="color: goldenrod;"><b>Rp. 8000</b></small></p>
+            <div class="counter-container justify-content-center">
+              <button class="btn-counter" onclick="decrease('americano')">−</button>
+              <span id="value-americano" class="value">0</span>
+              <button class="btn-counter" onclick="increase('americano')">+</button>
+            </div>
+          
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-md-4 col-lg-3 mb-3">
+        <div data-aos="fade-up" class="card cardcol" style=" background-color: rgb(24, 23, 23);">
+          <div class="img-menu" style="background-image: url('img/espresso.png');background-size: cover;background-position: center;">
+            
+          </div>
+          <div class="card-body" style="color: white;">
+            <h5 class="card-title underline-bold" id="menuespresso">Espresso</h5>
+            <p class="card-text font-desk" >Kopi pekat dengan rasa kuat, diseduh menggunakan tekanan tinggi.</p>
+            <p class="card-text" style="text-align: center;"><small class="text-body-body" style="color: goldenrod;"><b>Rp. 5000</b></small></p>
+            <div class="counter-container justify-content-center">
+              <button class="btn-counter" onclick="decrease('espresso')">−</button>
+              <span id="value-espresso" class="value">0</span>
+              <button class="btn-counter" onclick="increase('espresso')">+</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-md-4 col-lg-3 mb-3">
+        <div data-aos="fade-up" class="card cardcol" style=" background-color: rgb(24, 23, 23);">
+          <div class="img-menu" style="background-image: url('img/v60.png');background-size: cover;background-position: center;">
+            
+          </div>
+          <div class="card-body" style="color: white;">
+            <h5 class="card-title underline-bold" id="menuv60">V60</h5>
+            <p class="card-text font-desk" >Kopi seduh manual dengan alat V60, menghasilkan rasa yang bersih dan ringan..</p>
+            <p class="card-text" style="text-align: center;"><small class="text-body-body" style="color: goldenrod;"><b>Rp. 8000</b></small></p>
+            <div class="counter-container justify-content-center">
+              <button class="btn-counter" onclick="decrease('v60')">−</button>
+              <span id="value-v60" class="value">0</span>
+              <button class="btn-counter" onclick="increase('v60')">+</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-md-4 col-lg-3 mb-3">
+        <div data-aos="fade-up" class="card cardcol" >
+          <div class="img-menu" style="background-image: url('img/kopisusu.png');background-size: cover;background-position: center;">
+            
+          </div>
+          <div class="card-body" style="color: white;">
+            <h5 class="card-title underline-bold" id="menukopisusu">Kopi Susu</h5>
+            <p class="card-text font-desk">Campuran kopi dan susu, rasanya manis dan creamy.</p> 
+            <p class="card-text" style="text-align: center;"><small class="text-body-body" style="color: goldenrod;"><b>Rp. 10000</b></small></p>
+            <div class="counter-container justify-content-center">
+              <button class="btn-counter" onclick="decrease('kopisusu')">−</button>
+              <span id="value-kopisusu" class="value">0</span>
+              <button class="btn-counter" onclick="increase('kopisusu')">+</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-md-4 col-lg-3 mb-3">
+        <div data-aos="fade-up" class="card cardcol" >
+          <div class="img-menu" style="background-image: url('img/kopitubruk.png');background-size: cover;background-position: 20px center;">
+            
+          </div>
+          <div class="card-body" style="color: white;">
+            <h5 class="card-title underline-bold" id="menukopitubruk">Kopi Tubruk</h5>
+            <p class="card-text font-desk">Kopi khas Indonesia yang diseduh langsung dengan air panas tanpa disaring.</p>
+            <p class="card-text" style="text-align: center;"><small class="text-body-body" style="color: goldenrod;"><b>Rp. 8000</b></small></p>
+            <div class="counter-container justify-content-center">
+              <button class="btn-counter" onclick="decrease('kopitubruk')">−</button>
+              <span id="value-kopitubruk" class="value">0</span>
+              <button class="btn-counter" onclick="increase('kopitubruk')">+</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-md-4 col-lg-3 mb-3">
+        <div data-aos="fade-up" class="card cardcol" >
+          <div class="img-menu" style="background-image: url('img/indomerebus.png');background-size: cover;background-position: -55px center;">
+            
+          </div>
+          <div class="card-body" style="color: white;">
+            <h5 class="card-title underline-bold" id="menumierebus">Mie Rebus</h5>
+            <p class="card-text font-desk">Mie Indomie yang disajikan dengan kuah hangat.</p> <br>
+            <p class="card-text" style="text-align: center;"><small class="text-body-body" style="color: goldenrod;"><b>Rp. 5000</b></small></p>
+            <div class="counter-container justify-content-center">
+              <button class="btn-counter" onclick="decrease('mierebus')">−</button>
+              <span id="value-mierebus" class="value">0</span>
+              <button class="btn-counter" onclick="increase('mierebus')">+</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-md-4 col-lg-3 mb-3">
+        <div data-aos="fade-up" class="card cardcol" >
+          <div class="img-menu" style="background-image: url('img/goreng.png');background-size: cover;background-position: center;">
+            
+          </div>
+          <div class="card-body" style="color: white;">
+            <h5 class="card-title underline-bold" id="menumiegoreng">Mie Goreng</h5>
+            <p class="card-text font-desk">Indomie goreng favorit dengan cita rasa khas dan nikmat.</p>
+            <p class="card-text" style="text-align: center;"><small class="text-body-body" style="color: goldenrod;"><b>Rp. 5000</b></small></p>
+            <div class="counter-container justify-content-center">
+              <button class="btn-counter" onclick="decrease('miegoreng')">−</button>
+              <span id="value-miegoreng" class="value">0</span>
+              <button class="btn-counter" onclick="increase('miegoreng')">+</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-md-4 col-lg-3 mb-3">
+        <div data-aos="fade-up" class="card cardcol" >
+          <div class="img-menu" style="background-image: url('img/telur.png');background-size: cover;background-position: center;">
+            
+          </div>
+          <div class="card-body" style="color: white;">
+            <h5 class="card-title underline-bold" id="menutelur">Telur</h5>
+            <p class="card-text font-desk">Topping Tambahan Untuk Mie</p> <br>
+            <p class="card-text" style="text-align: center;"><small class="text-body-body" style="color: goldenrod;"><b>Rp. 3000</b></small></p>
+            <div class="counter-container justify-content-center">
+              <button class="btn-counter" onclick="decrease('telur')">−</button>
+              <span id="value-telur" class="value">0</span>
+              <button class="btn-counter" onclick="increase('telur')">+</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+     </div>
+     <div class="d-flex justify-content-center">
+      <button type="button"  class="btn " style="height: 40px;width: 200px;background-color: rgba(219, 142, 83, 0.923); border-radius: 10px; " data-bs-toggle="modal" data-bs-target="#exampleModal">
+        <span class="" style="color: aliceblue;"><svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-shopping-bag"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6.331 8h11.339a2 2 0 0 1 1.977 2.304l-1.255 8.152a3 3 0 0 1 -2.966 2.544h-6.852a3 3 0 0 1 -2.965 -2.544l-1.255 -8.152a2 2 0 0 1 1.977 -2.304z" /><path d="M9 11v-5a3 3 0 0 1 6 0v5" /></svg> Pesan</span>
+      </button>
+     </div>
+       <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg " style="margin-top: 100px;">
+    <div class="modal-content ">
+      <div class="modal-header " style="text-align: center;align-items: center;">
+        <h1 class="modal-title fs-5 position-absolute start-50 translate-middle mt-4" id="exampleModalLabel">Pesanan Anda</h1>
+        
+       
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form action="" name="datapelanggan" >
+        <div class="row">
+           <div class="alert alert-success my-alert d-none" style="text-align: center;" role="alert">
+  Terima kasih pesanan anda telah kami catat <br> Silahkan Kekasir untuk melakukan pembayaran
+</div>
+           
+         <!-- Nama -->
+              <div class="col-12">
+            <div class="input-group">
+           
+
+              <input type="text" class="form-control border-1" id="input-nama-customer" required autofocus placeholder="Masukan nama" aria-label="Username" name="nama" aria-describedby="visible-addon" >
+            
+            </div>
+          </div>
+          
+            <!-- select -->
+             <div class="col-12">
+              <select required class="form-select" name="mp" aria-label="Default select example">
+              <option value="" selected disabled hidden ="text-align: center;">Pilih Metode Pembayaran</option>
+              <option value="cash">Cash</option>
+              <option value="qris">Qris</option>
+              
+            </select>
+             </div>
+             
+          <!-- americano -->
+          <div class="col-6">
+            <div class="input-group">
+              <input type="text" class="form-control border-0" id="input-nama-americano"  placeholder="" aria-label="Username" aria-describedby="visible-addon" readonly>
+             
+            </div>
+          </div>
+          <div class="col-6">
+        <div class="input-group">
+          
+          <input type="text" class="form-control border-0" placeholder="" id="angkaamericano" aria-label="" aria-describedby="visible-addon" style="text-align: center;"  name="americano" readonly>
+         
+        </div>
+          </div>
+          <!-- espresso -->
+          <div class="col-6">
+            <div class="input-group">
+              <input type="text" class="form-control border-0" id="input-nama-espresso"  placeholder="" aria-label="Username" aria-describedby="visible-addon" readonly>
+             
+            </div>
+          </div>
+          <div class="col-6">
+        <div class="input-group">
+          
+          <input type="text" style="text-align: center;" class="form-control border-0" placeholder="" id="angkaespresso" aria-label="Username" aria-describedby="visible-addon" readonly name="espresso">
+         
+        </div>
+          </div>
+          <!-- v60 -->
+          <div class="col-6">
+            <div class="input-group">
+              <input type="text" class="form-control border-0" id="input-nama-v60"  placeholder="" aria-label="Username" aria-describedby="visible-addon" readonly>
+             
+            </div>
+          </div>
+          <div class="col-6">
+        <div class="input-group">
+          
+          <input type="text" class="form-control border-0" placeholder="" id="angkav60" aria-label="Username" aria-describedby="visible-addon" style="text-align: center;" readonly name="v60">
+         
+        </div>
+          </div>
+          <!-- kopisusu -->
+          <div class="col-6">
+            <div class="input-group">
+              <input type="text" class="form-control border-0" id="input-nama-kopisusu"  placeholder="" aria-label="Username" aria-describedby="visible-addon" readonly>
+             
+            </div>
+          </div>
+          <div class="col-6">
+        <div class="input-group">
+          
+          <input type="text" class="form-control border-0" placeholder="" id="angkakopisusu" aria-label="Username" aria-describedby="visible-addon" style="text-align: center;" readonly name="kopisusu">
+         
+        </div>
+          </div>
+          <!-- kopi tubruk -->
+          <div class="col-6">
+            <div class="input-group">
+              <input type="text" class="form-control border-0" id="input-nama-kopitubruk"  placeholder="" aria-label="Username" aria-describedby="visible-addon" readonly>
+             
+            </div>
+          </div>
+          <div class="col-6">
+        <div class="input-group">
+          
+          <input type="text" style="text-align: center;" class="form-control border-0" placeholder="" id="angkakopitubruk" aria-label="Username" aria-describedby="visible-addon" readonly name="kopitubruk">
+         
+        </div>
+          </div>
+          <!-- mierebus -->
+          <div class="col-6">
+            <div class="input-group">
+              <input type="text" class="form-control border-0" id="input-nama-mierebus"  placeholder="" aria-label="Username" aria-describedby="visible-addon" readonly >
+             
+            </div>
+          </div>
+          <div class="col-6">
+        <div class="input-group">
+          
+          <input type="text" class="form-control border-0" placeholder="" id="angkamierebus" aria-label="Username" aria-describedby="visible-addon" name="mierebus" style="text-align: center;" readonly>
+         
+        </div>
+          </div>
+           <!-- select rasa -->
+             <div class="col-6">
+              <select  class="form-select mie d-none"  name="mie" aria-label="Default select example">
+              <option value="" selected disabled hidden>Pilih Rasa</option>
+              <option value="ayam">Ayam Bawang</option>
+              <option value="soto">Soto</option>
+            </select>
+          </div>
+          <div class="col-6">
+              
+          </div>
+          <!-- miegoreng -->
+          <div class="col-6">
+            <div class="input-group">
+              <input type="text" class="form-control border-0" id="input-nama-miegoreng"  placeholder="" aria-label="Username" aria-describedby="visible-addon" readonly >
+             
+            </div>
+          </div>
+          <div class="col-6">
+        <div class="input-group">
+          
+          <input type="text" class="form-control border-0" style="text-align: center;" placeholder="" id="angkamiegoreng" aria-label="Username" aria-describedby="visible-addon"name="miegoreng" readonly>
+         
+        </div>
+          </div>
+          <!-- telur -->
+          <div class="col-6">
+            <div class="input-group">
+              <input type="text" class="form-control border-0"  id="input-nama-telur"  placeholder="" aria-label="Username" aria-describedby="visible-addon" readonly >
+             
+            </div>
+          </div>
+          <div class="col-6">
+        <div class="input-group">
+          
+          <input type="text" class="form-control border-0" style="text-align: center;" placeholder="" id="angkatelur" aria-label="Username" aria-describedby="visible-addon" name="telur" readonly>
+         
+        </div>
+          </div>
+          <!-- Total -->
+           <div class="col-6 mt-2">
+            <div class="input-group">
+              <input type="text" class="form-control border-0" id="input-nama-total"  placeholder="Total" aria-label="Username" aria-describedby="visible-addon" readonly>
+             
+            </div>
+          </div>
+          <div class="col-6 mt-2">
+        <div class="input-group">
+          
+          <input type="text" class="form-control border-0" style="text-align: center;" placeholder="" id="angkatotal" aria-label="Username" aria-describedby="visible-addon" readonly name="total">
+         
+        </div>
+          </div>
+          <!--  -->
+        </div>
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary btn-kirim" data-bs-dismiss="modal">Close</button>
+        <button type="button submit" class="btn btn-primary">Kirim</button>
+
+        <button class="btn btn-primary btn-loading d-none" type="button" disabled>
+        <span class="spinner-border spinner-border-sm" aria-hidden="true"></span>
+        <span role="status">Loading...</span>
+        </button>
+      </div>
+      </form>
+    </div>
+  </div>
+</div>
+       <!--  -->
+    </div>
+
+    <div class="aboutus mt-5" id="aboutus">
+      <p style="text-align: center; color: white;font-size: 2.5rem;" class="utline"><b>Tentang Kami</b></p>
+      <div class="card mb-3"  data-aos="fade-up" style="background-color: black;color: white;">
+        <div class="row g-0" >
+          <div class="col-md-5">
+            <div class="gambartentangkami" style="height: 300px;background-image: url(img/kenapa.jpg);background-size: cover;background-position: center; border-radius: 5px;">
+
+            </div>
+          </div>
+          <div class="col-md-7">
+            <div class="card-body">
+              <h5 class="card-title" style="font-size: 2rem; color: burlywood;">Kenapa NutreeCoffe?</h5>
+              <p class="card-text" style="font-size: 1rem;text-align: justify;">NutreeCoffe bukan sekadar kopi biasa. Kami memadukan cita rasa kopi berkualitas dengan manfaat nutrisi alami, untuk menemani gaya hidup aktif dan sehat Anda. Dengan bahan pilihan seperti biji kopi premium, nutrisi fungsional, dan bahan alami bernutrisi tinggi, NutreeCoffe hadir sebagai solusi minuman sehat yang tetap nikmat.</p>
+             
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="lokasi mt-3" id="lokasi">
+      <p style="text-align: center; color: white;font-size: 2.5rem;" class="utline"><b>Lokasi</b></p>
+      <div class="card mb-3" data-aos="fade-up" style="background-color: black;color: white;">
+        <div class="row g-0" >
+         
+          <div class="col-md-7" >
+            <div class="card-body">
+              <h5 class="card-title" style="font-size: 2rem;color: burlywood;">Fapet Unpad Gd 3 Lt 1</h5>
+              <p class="card-text" style="font-size: 1rem;text-align: justify;">Lokasi NutreeCoffe ada di Fakultas Peternakan Unpad, Gedung 3 Lantai 1. Kamu gampang banget nemuin tempatnya, Begitu masuk ke area Fakultas Peternakan, tinggal cari Gedung 3, dan kamu langsung nemuin NutreeCoffe di lantai paling bawah. Lokasinya juga dekat dengan area parkir, jadi gampang banget buat mampir — entah itu habis kuliah, mau nugas, atau cuma pengen ngopi santai. Kalau bingung, tinggal tanya aja ke satpam atau mahasiswa di sekitar, pasti pada tahu!</p>
+             
+            </div>
+          </div>
+          <div class="col-md-5">
+            <div class="gambarlokasi" style="height: 300px;background-image: url(img/maps.jpg);background-size: cover;background-position: center; border-radius: 5px;">
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.min.js" integrity="sha384-RuyvpeZCxMJCqVUGFI0Do1mQrods/hhxYlcVfGPOfQtPJh0JCw12tUAZ/Mv10S7D" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbx1hbnYUlwiOwBlMbID0AihZI7gKA3UZu7M-Ipd26BdOr-pEkPCbBLU8qAR-g3wx70P/exec'
+  const form = document.forms['datapelanggan']
+  const btnkirim = document.querySelector('.btn-kirim')
+  const btnloading = document.querySelector('.btn-loading')
+  const myalert = document.querySelector('.my-alert')
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    // tampilkan loading hilangkan kirim
+    btnloading.classList.toggle("d-none")
+    btnkirim.classList.toggle("d-none")
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        btnloading.classList.toggle("d-none")
+        btnkirim.classList.toggle("d-none")
+        myalert.classList.toggle("d-none")
+        console.log('Success!', response)})
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+    <script src="js.js"></script>
+  </body>
+</html>
