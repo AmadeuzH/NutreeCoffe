@@ -7,8 +7,7 @@ let count = {
     mierebus : 0,
     miegoreng : 0,
     telur : 0,
-    basotahu : 0,
-   
+    basotahu : 0
 
 };
 const prices = {
@@ -20,9 +19,7 @@ const prices = {
   mierebus: 5000,
   miegoreng: 5000,
   telur: 3000,
-    basotahu : 10000,
-
-    
+  basotahu : 10000
 };
 window.onload = function () {
   for (let key in count) {
@@ -39,7 +36,9 @@ function updateTotal() {
   for (let item in count) {
     total += count[item] * prices[item];
   }
-  document.getElementById('angkatotal').value = 'Rp ' + total.toLocaleString('id-ID');
+  document.getElementById('angkatotal_view').value = "Rp" + total.toLocaleString('id-ID');
+document.getElementById('angkatotal').value = total;
+
 }
 
 function updateDisplay(id) {
@@ -64,14 +63,15 @@ if (hiddenamericano < 1) {
   document.getElementById('angka'+id).classList.remove('visually-hidden')
  
 }
-let pilihmenu = document.querySelector('.mie')
-let valuemierebus = document.getElementById('angkamierebus').value
+let pilihmenu = document.querySelector('.mie');
+let valuemierebus = parseInt(document.getElementById('angkamierebus').value);
+
 if (valuemierebus >= 1) {
-  pilihmenu.classList.remove('d-none')
-  pilihmenu.setAttribute("required","")
-} else{
-  pilihmenu.classList.toggle("d-none")
-  pilihmenu.removeAttribute("required", "")
+  pilihmenu.classList.remove('d-none');
+  pilihmenu.setAttribute("required", "");
+} else {
+  pilihmenu.classList.add("d-none");
+  pilihmenu.removeAttribute("required");
 }
   updateTotal();
   }
@@ -119,15 +119,15 @@ document.getElementById("input-nama-miegoreng").value = menumiegoreng;
 // telur
 let menutelur = document.getElementById("menutelur").innerText;
 document.getElementById("input-nama-telur").value = menutelur;
-
-let menubasotahu = document.getElementById("menubasotahu").innerText;
-document.getElementById("input-nama-basotahu").value = menubasotahu;
+// basotahu
+let basotahu = document.getElementById("menubasotahu").innerText;
+document.getElementById("input-nama-basotahu").value = basotahu;
     
-// function validateSelect() {
-//   const select = document.getElementById("mp");
-//   if (!select.value) {
-//     alert("Silakan pilih metode pembayaran.");
-//     return false;
-//   }
-//   return true;
-// }
+function validateSelect() {
+  const select = document.getElementById("mp");
+  if (!select.value) {
+    alert("Silakan pilih metode pembayaran.");
+    return false;
+  }
+  return true;
+}
