@@ -7,6 +7,7 @@ let count = {
     mierebus : 0,
     miegoreng : 0,
     telur : 0,
+    basotahu : 0,
    
 
 };
@@ -19,6 +20,7 @@ const prices = {
   mierebus: 5000,
   miegoreng: 5000,
   telur: 3000,
+    basotahu : 10000,
 
     
 };
@@ -118,8 +120,8 @@ document.getElementById("input-nama-miegoreng").value = menumiegoreng;
 let menutelur = document.getElementById("menutelur").innerText;
 document.getElementById("input-nama-telur").value = menutelur;
 
-// let menubasotahu = document.getElementById("menubasotahu").innerText;
-// document.getElementById("input-nama-basotahu").value = menubasotahu;
+let menubasotahu = document.getElementById("menubasotahu").innerText;
+document.getElementById("input-nama-basotahu").value = menubasotahu;
     
 // function validateSelect() {
 //   const select = document.getElementById("mp");
