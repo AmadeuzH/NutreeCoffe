@@ -7,7 +7,10 @@ let count = {
     mierebus : 0,
     miegoreng : 0,
     telur : 0,
-    basotahu : 0
+    basotahu : 0,
+    airmineral: 0,
+    tehbotol : 0,
+    youghurt : 0,
 
 };
 const prices = {
@@ -19,7 +22,10 @@ const prices = {
   mierebus: 5000,
   miegoreng: 5000,
   telur: 3000,
-  basotahu : 10000
+  basotahu : 10000,
+  airmineral: 5000,
+  tehbotol : 5000,
+  youghurt : 5000,
 };
 window.onload = function () {
   for (let key in count) {
@@ -122,6 +128,16 @@ document.getElementById("input-nama-telur").value = menutelur;
 // basotahu
 let basotahu = document.getElementById("menubasotahu").innerText;
 document.getElementById("input-nama-basotahu").value = basotahu;
+// yg
+let youghurt = document.getElementById("menuyoughurt").innerText;
+document.getElementById("input-nama-youghurt").value = youghurt;
+// teh
+let tehbotol = document.getElementById("menutehbotol").innerText;
+document.getElementById("input-nama-tehbotol").value = tehbotol;
+// air
+let airmineral = document.getElementById("menuairmineral").innerText;
+document.getElementById("input-nama-airmineral").value = airmineral;
+
     
 function validateSelect() {
   const select = document.getElementById("mp");
