@@ -243,23 +243,23 @@
       <div class="modal-body">
         <form action="" name="datapelanggan" >
         <div class="row">
-           <div class="alert alert-success my-alert d-none" style="text-align: center;" role="alert">
-  Terima kasih pesanan anda telah kami catat <br> Silahkan Kekasir untuk melakukan pembayaran
+           <div class="alert alert-success my-alert d-none" style="text-align: center;font-size: 12px;" role="alert">
+  Terima kasih pesanan anda telah kami catat <br> Silahkan Kekasir untuk melakukan pembayaran <br> untuk memesan kembali mohon di reload terlebih dahulu!
 </div>
            
          <!-- Nama -->
-              <div class="col-12">
-            <div class="input-group">
+              <div class="col-12 mb-2" >
+            <div class="input-group" >
            
 
-              <input type="text" class="form-control border-1" id="input-nama-customer" required autofocus placeholder="Masukan nama" aria-label="Username" name="nama" aria-describedby="visible-addon" >
+              <input type="text" style="border: 2px solid salmon;" class="form-control border-1" id="input-nama-customer" required autofocus placeholder="Masukan nama" aria-label="Username" name="nama" aria-describedby="visible-addon" >
             
             </div>
           </div>
           
             <!-- select -->
-             <div class="col-12">
-              <select required class="form-select" name="mp" aria-label="Default select example">
+             <div class="col-12 mb-2">
+              <select required style="border: 2px solid salmon;"  class="form-select" name="mp" aria-label="Default select example">
               <option value="" selected disabled hidden ="text-align: center;">Pilih Metode Pembayaran</option>
               <option value="cash">Cash</option>
               <option value="qris">Qris</option>
@@ -390,37 +390,28 @@
          
         </div>
           </div>
-
-<!--           baso tahu -->
+          <!--           baso tahu -->
            <div class="col-6">
             <div class="input-group">
               <input type="text" class="form-control border-0" id="input-nama-basotahu"  placeholder="" aria-label="Username" aria-describedby="visible-addon" readonly >
-             
             </div>
           </div>
           <div class="col-6">
         <div class="input-group">
-          
           <input type="text" class="form-control border-0" placeholder="" id="angkabasotahu" aria-label="Username" aria-describedby="visible-addon" name="basotahu" style="text-align: center;" readonly>
-         
         </div>
+       
           </div>
-<!--             <div class="col-6">
+          <!-- catatan -->
+           <div class="col-md-12 mt-2">
+            <label for="message-text" class="labelcatatan" style="padding-left: 2px;text-align: center;font-style: italic;">Tambahkan catatan, bila tidak ada ketik (-): </label>
             <div class="input-group">
-              <input type="text" class="form-control border-0"  id="input-nama-basotahu"  placeholder="" aria-label="Username" aria-describedby="visible-addon" readonly >
-             
+               
+           <textarea style="border: 2px solid salmon;"  required type="text" name="catatan" id="catatan" class="form-control" id="message-text"></textarea>
             </div>
-          </div>
-          <div class="col-6">
-        <div class="input-group">
-          
-          <input type="text" class="form-control border-0" style="text-align: center;" placeholder="" id="angkabasotahu" aria-label="Username" aria-describedby="visible-addon" name="basotahu" readonly>
-         
-        </div>
-          </div> -->
-
-
-  
+           </div>
+           
+           
           <!-- Total -->
            <div class="col-6 mt-2">
             <div class="input-group">
@@ -431,8 +422,8 @@
           <div class="col-6 mt-2">
         <div class="input-group">
           
-          <input type="text" class="form-control border-0" style="text-align: center;" placeholder="" id="angkatotal" aria-label="Username" aria-describedby="visible-addon" readonly name="total">
-         
+          <input type="text" class="form-control border-0" style="text-align: center;" placeholder="" id="angkatotal_view" aria-label="Username" aria-describedby="visible-addon" readonly >
+         <input type="hidden" name="total" id="angkatotal">
         </div>
           </div>
           <!--  -->
