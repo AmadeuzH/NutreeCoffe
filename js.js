@@ -121,11 +121,11 @@ document.getElementById("input-nama-telur").value = menutelur;
 // let menubasotahu = document.getElementById("menubasotahu").innerText;
 // document.getElementById("input-nama-basotahu").value = menubasotahu;
     
-function validateSelect() {
-  const select = document.getElementById("mp");
-  if (!select.value) {
-    alert("Silakan pilih metode pembayaran.");
-    return false;
-  }
-  return true;
-}
+// function validateSelect() {
+//   const select = document.getElementById("mp");
+//   if (!select.value) {
+//     alert("Silakan pilih metode pembayaran.");
+//     return false;
+//   }
+//   return true;
+// }
